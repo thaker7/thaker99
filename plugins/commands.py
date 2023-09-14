@@ -508,14 +508,22 @@ async def m6(c: Client, m: CallbackQuery):
 ♻️╢ الغاء العام
 📚╜ ❬ + ❭ جميع ماسبق
 ═══════『♡』═══════ٴ
-    """, reply_markup=keyboard)
+    """, reply_markup=keyboard) 
+
+
+@Client.on_callback_query(filters.regex("^m7 (\\d+)$"))
+async def m5(c: Client, m: CallbackQuery):
+    a = m.data.split(" ")
+    if m.from_user.id != int(a[1]):
+        await c.answer_callback_query(m.id, text="صاحب الامر هو فقط من يستطيع الضغط على الزر 🖤🙂", show_alert=True)
+        return
+    keyboard = InlineKeyboardMarkup(inline_keyboard=[
     
         [InlineKeyboardButton("القائمه الرئيسيه ⏺", callback_data="command2 " + str(m.from_user.id))],
         [InlineKeyboardButton("اضف البوت الي مجموعتك ✅", url=f"https://t.me/{get_bot_information()[1]}?startgroup=new")],
 
     ])
     await m.message.edit_text("""
-💎╜ ❬ م7 ❭ اوامر الالعاب ⇊
 💎 الالعاب الخاصه بالسورس
 •━━━━━━━『♡』━━━━━━━•ٴ
 ⚙️╖ لفتح الالعاب او قفلها ارسل ⇊
