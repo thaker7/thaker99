@@ -130,43 +130,43 @@ async def ids_default(c: Client, m: Message):
     medooid = f"""
 عذراً عزيزي انت لا تمتلك صورة او أنك قمت بحظر البوت اضغط استارت [هنا](tg://user?id={get_bot_information()[0]}) وتاكد
 
-💎╖ ايدِيڪ ⇇ `{user_data.id}`
-🐣╢ اسمڪ ⇇ `{first_name + last_name}`
-☀️╢ يوزرڪ ⇇ @{username}
-🎈╢ نقاطك ⇇ *{get_mypoint(m)}*
-💌╢ رسائلك ⇇ *{get_mymessage(m)}*
-👥╢ جهاتك ⇇ *{get_mycontact(m)}*
-🏅╢ تفاعلك ⇇ {get_mymessage_interaction(get_mymessage(m))}
-👮‍♂️╢ رتبتڪ بالبـوت ⇇ {await get_Rank(user_data2)}
-🌍╢ رتبتڪ بالـروم ⇇ {adminrom}
-💬╜ رسـائل الجـرۆب ⇇ *{m.message_id + 1}*
+𖡋 𝐈𝐃  ⌯ `{user_data.id}`
+𖡋 𝐍𝐀𝐌𝐄  ⌯ `{first_name + last_name}`
+𖡋 𝐔𝐒𝐄𝐑  ⌯ @{username}
+𖡋 𝐏𝐎𝐈𝐍𝐓𝐒 ⌯ *{get_mypoint(m)}*
+𖡋 𝐌𝐄𝐒𝐒𝐀𝐆𝐄 ⌯ *{get_mymessage(m)}*
+𖡋 𝐂𝐎𝐍𝐓𝐀𝐂𝐓 ⌯ *{get_mycontact(m)}*
+𖡋 𝐈𝐍𝐓𝐄𝐑𝐀𝐂𝐓𝐈𝐎𝐍 ⌯ {get_mymessage_interaction(get_mymessage(m))}
+𖡋 𝐑𝐀𝐍𝐊 ⌯ {await get_Rank(user_data2)}
+𖡋 𝐑𝐀𝐍𝐊 𝐑 ⌯ {adminrom}
+𖡋 𝐌𝐒 𝐆𝐑𝐎𝐔𝐏 ⌯ *{m.message_id + 1}*
         """
 
     medooid2 = f"""
 {random.choice(randomtext)}
-💎╖ ايدِيڪ ⇇ `{user_data.id}`
-🐣╢ اسمڪ ⇇ `{first_name + last_name}`
-☀️╢ يوزرڪ ⇇ @{username}
-⭐╢ نقاطك ⇇ *{get_mypoint(m)}*
-💌╢ رسائلك ⇇ *{get_mymessage(m)}*
-👥╢ جهاتك ⇇ *{get_mycontact(m)}*
-🏅╢ تفاعلك ⇇ {get_mymessage_interaction(get_mymessage(m))}
-👮‍♂️╢ رتبتڪ بالبـوت ⇇ {await get_Rank(user_data2)}
-🌍╢ رتبتڪ بالـروم ⇇ {adminrom}
-💬╜ رسـائل الجـرۆب ⇇ *{m.message_id + 1}*
+𖡋 𝐈𝐃  ⌯ `{user_data.id}`
+𖡋 𝐍𝐀𝐌𝐄  ⌯ `{first_name + last_name}`
+𖡋 𝐔𝐒𝐄𝐑  ⌯ @{username}
+𖡋 𝐏𝐎𝐈𝐍𝐓𝐒 ⌯ *{get_mypoint(m)}*
+𖡋 𝐌𝐄𝐒𝐒𝐀𝐆𝐄 ⌯ *{get_mymessage(m)}*
+𖡋 𝐂𝐎𝐍𝐓𝐀𝐂𝐓 ⌯ *{get_mycontact(m)}*
+𖡋 𝐈𝐍𝐓𝐄𝐑𝐀𝐂𝐓𝐈𝐎𝐍 ⌯ {get_mymessage_interaction(get_mymessage(m))}
+𖡋 𝐑𝐀𝐍𝐊 ⌯ {await get_Rank(user_data2)}
+𖡋 𝐑𝐀𝐍𝐊 𝐑 ⌯ {adminrom}
+𖡋 𝐌𝐒 𝐆𝐑𝐎𝐔𝐏 ⌯ *{m.message_id + 1}*
             """
 
     elnagarid = f"""
-💎╖ ايدِيڪ ⇇ `{user_data.id}`
-🐣╢ اسمڪ ⇇ `{first_name + last_name}`
-☀️╢ يوزرڪ ⇇ @{username}
-⭐╢ نقاطك ⇇ *{get_mypoint(m)}*
-💌╢ رسائلك ⇇ *{get_mymessage(m)}*
-👥╢ جهاتك ⇇ *{get_mycontact(m)}*
-🏅╢ تفاعلك ⇇ {get_mymessage_interaction(get_mymessage(m))}
-👮‍♂️╢ رتبتڪ بالبـوت ⇇ {await get_Rank(user_data2)}
-🌍╢ رتبتڪ بالـروم ⇇ {adminrom}
-💬╜ رسـائل الجـرۆب ⇇ *{m.message_id + 1}*
+𖡋 𝐈𝐃  ⌯ `{user_data.id}`
+𖡋 𝐍𝐀𝐌𝐄  ⌯ `{first_name + last_name}`
+𖡋 𝐔𝐒𝐄𝐑  ⌯ @{username}
+𖡋 𝐏𝐎𝐈𝐍𝐓𝐒 ⌯ *{get_mypoint(m)}*
+𖡋 𝐌𝐄𝐒𝐒𝐀𝐆𝐄 ⌯ *{get_mymessage(m)}*
+𖡋 𝐂𝐎𝐍𝐓𝐀𝐂𝐓 ⌯ *{get_mycontact(m)}*
+𖡋 𝐈𝐍𝐓𝐄𝐑𝐀𝐂𝐓𝐈𝐎𝐍 ⌯ {get_mymessage_interaction(get_mymessage(m))}
+𖡋 𝐑𝐀𝐍𝐊 ⌯ {await get_Rank(user_data2)}
+𖡋 𝐑𝐀𝐍𝐊 𝐑 ⌯ {adminrom}
+𖡋 𝐌𝐒 𝐆𝐑𝐎𝐔𝐏 ⌯ *{m.message_id + 1}*
             """
 
     if not await c.get_profile_photos(user_data.id, limit=1):
