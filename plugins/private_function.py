@@ -654,7 +654,7 @@ async def baseprivate(c: Client, m: Message):
 ########################################################################################################################
 ########################################################################################################################
 
-    if m.text == "السورس" or m.text == "سورس" or m.text == "يا سورس":
+    if m.text == "بوت" or m.text == "سورسنتزاترز" or m.text == "البوت":
         medoo = await c.get_users(super_sudoers[0])
         Shadoow = await c.get_users(super_sudoers[0])
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
@@ -662,18 +662,16 @@ async def baseprivate(c: Client, m: Message):
                              Shadoow.first_name, url=f"https://t.me/{medoo. username}"
             )
             ], 
-            [ InlineKeyboardButton ( "𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘖𝘙𝘚𝘌 ♡", url=f"https://t.me/SOURCE_HORSE")],
+            [ InlineKeyboardButton ( "𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘖𝘙𝘚𝘌 ♡", url=f"https://t.me/mane5u")],
             [InlineKeyboardButton("اضف البوت الي مجموعتك ✅",
                                   url=f"https://t.me/{get_bot_information()[1]}?startgroup=new")],
             ])
         await m.reply_text("""
 ╭──── • ◈ • ────╮
-么 [َِ𝘡𝘖𝘏𝘈𝘙𝘠 ♡](t.me/z0hary)
-么 [َِ𝘔𝘖𝘋𝘠 ♡](t.me/M_O_0D)
-么 [َِ𝘔𝘖𝘓𝘛𝘖 ♡](t.me/H_L_P_U)
-么 [𝘚𝘏𝘈𝘋𝘖𝘞 ♡](t.me/A_T_M_L)
-么 [𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘖𝘙𝘚𝘌 ♡](t.me/SOURCE_HORSE)
-╰──── • ◈ • ────╯
+么 [َِقناة البوت ♡](t.me/mane5u)
+
+么 [َِSADRE ♡](t.me/T_4IJ) 
+╰──── • ◈ • ────╯ 
 
 ⍟ 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼
         """, reply_markup=keyboard,  reply_to_message_id=m.message_id, parse_mode="Markdown")
