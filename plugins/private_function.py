@@ -654,24 +654,10 @@ async def baseprivate(c: Client, m: Message):
 ########################################################################################################################
 ########################################################################################################################
 
-    if m.text == "بوت" or m.text == "سورسنتزاترز" or m.text == "البوت":
-        medoo = await c.get_users(super_sudoers[0])
-        Shadoow = await c.get_users(super_sudoers[0])
-        keyboard = InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton(
-                             Shadoow.first_name, url=f"https://t.me/{medoo. username}"
-            )
-            ], 
-            [ InlineKeyboardButton ( "𝘚𝘖𝘜𝘙𝘊𝘌 𝘏𝘖𝘙𝘚𝘌 ♡", url=f"https://t.me/mane5u")],
-            [InlineKeyboardButton("اضف البوت الي مجموعتك ✅",
-                                  url=f"https://t.me/{get_bot_information()[1]}?startgroup=new")],
-            ])
+    if m.text == "/start" or m.text == "سورسنتزاترز" or m.text == "البوورتهررت":
         await m.reply_text("""
-╭──── • ◈ • ────╮
-么 [َِقناة البوت ♡](t.me/mane5u)
-
-么 [َِSADRE ♡](t.me/T_4IJ) 
-╰──── • ◈ • ────╯ 
+        اهلا بـك فـي بوت مـاريـا 
+        قنـاتي @mane5u
 
 ⍟ 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼
         """, reply_markup=keyboard,  reply_to_message_id=m.message_id, parse_mode="Markdown")
@@ -681,7 +667,7 @@ async def baseprivate(c: Client, m: Message):
         n = await c.get_users(sudoers[0])
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
             [InlineKeyboardButton(abdo.first_name, url=f"https://t.me/{abdo.username}")],
-            [InlineKeyboardButton(f"{n.first_name}", url=f"https://t.me/{n.username}")],
+            [InlineKeyboardButtf"{n.first_name}", url=f"https://t.me/{n.username}")],
             [InlineKeyboardButton("ضيـف البـوت لمجمـوعتـك ✅",
                                   url=f"https://t.me/{get_bot_information()[1]}?startgroup=new")],
         ])
