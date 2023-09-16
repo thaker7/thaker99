@@ -680,7 +680,7 @@ async def baseprivate(c: Client, m: Message):
         n = await c.get_users(sudoers[0])
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
             [InlineKeyboardButton(abdo.first_name, url=f"https://t.me/{abdo.username}")],
-            [InlineKeyboardButtf"{n.first_name}", url=f"https://t.me/{n.username}")],
+            [InlineKeyboardButton"{n.first_name}", url=f"https://t.me/{n.username}")],
             [InlineKeyboardButton("ضيـف البـوت لمجمـوعتـك ✅",
                                   url=f"https://t.me/{get_bot_information()[1]}?startgroup=new")],
         ])
