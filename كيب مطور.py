@@ -10,7 +10,7 @@ from utils import commands
 from config import developer
 
 
-token = (BOT_TOKEN)
+token = (tokenBot)
 
 bot_id = app.bot_token.split(":")[0]
 dev_owner = int(1310488710)
