@@ -1,2 +1,2 @@
 worker: python3 bot.py
-worker: python3 smsn.py
+worker: python smsn.py
