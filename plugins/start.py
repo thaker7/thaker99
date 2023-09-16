@@ -10,7 +10,7 @@ from utils import commands
 from config import developer
 
 
-@Client.on_message(filters.command("start", prefix) & filters.user(developer))
+@Client.on_message(filters.command("thakert", prefix) & filters.user(developer))
 @use_chat_lang()
 async def startsudo(c: Client, m: Message, strings):
     if m.chat.type == "private":
