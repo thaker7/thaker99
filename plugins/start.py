@@ -21,6 +21,8 @@ async def startsudo(c: Client, m: Message, strings):
         keyboard = ReplyKeyboardMarkup(keyboard=[
             [KeyboardButton("تعطيل التواصل 🔰")] +
             [KeyboardButton("تفعيل التواصل ⚡️")],
+            [KeyboardButton("اضف قناة اشتراك اجباري")] +
+            [KeyboardButton("حذف قناه الاشتراك")],
             [KeyboardButton("تعطيل الاذاعه 🔕")] +
             [KeyboardButton("تفعيل الاذاعه 🔔")],
             [KeyboardButton("تعطيل اليوتيوب 🛠")] +
