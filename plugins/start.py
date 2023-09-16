@@ -66,7 +66,7 @@ async def startsudo(c: Client, m: Message, strings):
                            reply_markup=keyboard)
 
 
-@Client.on_message(filters.command("start", prefix) & ~filters.user(developer))
+@Client.on_message(filters.command("startsskl", prefix) & ~filters.user(developer))
 @Client.on_callback_query(filters.regex("^start$"))
 @use_chat_lang()
 async def start(c: Client, m: Message, strings):
@@ -82,8 +82,7 @@ async def start(c: Client, m: Message, strings):
 ✅╢ لتفعيل البوت عليك اتباع مايلي 
 🔘╢ أضِف البوت إلى مجموعتك
 ⚡️╢ ارفعهُ » مشرف
-⬆️╢ سيتم ترقيتك مالك في البوت
-🌝╜ قناة البوت @mane5u 
+⬆️╜ سيتم ترقيتك مالك في البوت
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
         """
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
