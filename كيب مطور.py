@@ -1,35 +1,13 @@
-import random
-import re
-import requests
-from pyrogram import filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from backup_file import get_backup, upper_backup, get_backup2
-from config import super_sudoers, get_bot_information
-from database import set_db_wait, get_db_gban, get_db_gmute, get_db_greply, get_db_botname, \
-    del_db_gmuteall, del_db_gbanall, del_db_banallall, del_db_muteallall, del_db_meendafnyallall, \
-    del_db_mycontactallall, del_db_mypointgameallall, del_db_mymessageallall, drop_db_replygroup, drop_db_locktext, \
-    drop_db_wait, drop_db_waitq, get_db_priban, del_db_pribanall, drop_db_pribanallall, del_db_general_rtball
-from plugins.abrag import abrag
-from plugins.aflam import aflamAR
-from plugins.cartoon import cartoon
-from plugins.commands import command
-from plugins.developer import developersrep, developersuser, undevelopersrep, undeveloperuser, seconddevelopersrep, \
-    seconddevelopersuser, secondundevelopersrep, secondundeveloperuser
-from plugins.games import games
-from plugins.general import replay_global_test, gunbanuser, gunbanrep, gmuteuser, gmuterep, gbanuser, gbanrep
-from plugins.ids import ids_private
-from plugins.keyboard_private import *
-from plugins.music import music
-from plugins.private_ban import privbanrep, privbanuser, privunbanrep, privunbanuser, priban_user_test
-from plugins.quran import quran
-from plugins.ghnely import ghnely
-from plugins.reply import addgeneralrep, delgeneralrep, namebot, omrk, echo_text, allreply_for_bot, say_text
-from plugins.rtp_function import *
-from plugins.rwayat import rwaiat
-from plugins.sudos import test_speed, upgrade, restart
-from plugins.wait import wait_all
-from plugins.weather import weather
-from plugins.youtube import youtube_main
+from pyrogram import Client, filters
+from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton, Message, ReplyKeyboardMarkup,\
+    KeyboardButton
+from config import prefix, get_bot_information
+from database import get_db_botname
+from localization import use_chat_lang
+from plugins.commands import command2
+from plugins.general import confirm_user
+from utils import commands
+from config import developer
 
 
 token = (BOT_TOKEN)
