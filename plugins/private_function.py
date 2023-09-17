@@ -654,7 +654,7 @@ async def baseprivate(c: Client, m: Message):
 ########################################################################################################################
 ########################################################################################################################
 
-    if m.text == "السورس" or m.text == "سورس" or m.text == "يا سورس":
+    if m.text == "السورسالااتتر" or m.text == "سونرتنننرس" or m.text == "يا تتتتترسورس":
         medoo = await c.get_users(super_sudoers[0])
         Shadoow = await c.get_users(super_sudoers[0])
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
