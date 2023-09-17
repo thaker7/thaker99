@@ -7,10 +7,10 @@ from localization import use_chat_lang
 from plugins.commands import command2
 from plugins.general import confirm_user
 from utils import commands
-from config import developer ,tokenBot
+from config import developer
 
 
-@Client.on_message(filters.command("thakert", prefix) & filters.user(developer))
+@Client.on_message(filters.command("ftt", prefix) & filters.user(developer))
 @use_chat_lang()
 async def startsudo(c: Client, m: Message, strings):
     if m.chat.type == "private":
@@ -65,38 +65,19 @@ async def startsudo(c: Client, m: Message, strings):
         await m.reply_text(strings("group"),
                            reply_markup=keyboard)
 
-bot_id = tokenBot.split(":")[0]
 
-app = Client("N00",api_id=api_id,api_hash=api_hash,bot_token=token)
-
-try:
-	open(f"channel{bot_id}.json","r")
-except FileNotFoundError:
-	open(f"channel{bot_id}.json","w")
-	
-def is_user(id):
-		result = False
-def show_channel() -> str:
-	with open(f"channel{bot_id}.json","r") as file:
-		return file.readline()
-	
-@Client.on_message(filters.command("start")&filters.private)
-async def app_start(c:Client,m:Message):
-	do = requests.get(f"https://api.telegram.org/bot{token}/getChatMember?chat_id=@{show_channel()}&user_id={m.from_user.id}").text
-	user = m.from_user.id
-	
-	if do.count("left") or do.count("Bad Request: user not found") or is_user(id=user) and not is_band(user):
-          await m.reply_text(f"**Join [this channel](t.me/{show_channel()}) first to be able to use the bot**",disable_web_page_preview=True,reply_markup=InlineKeyboardMarkup(
-[[
-InlineKeyboardButton("Join Channel",
-url=f'https://t.me/{show_channel()}'),
-],
-]))
-	
-	else:
-	    await app.send_message(text=f"""
+@Client.on_message(filters.command("startsskl", prefix) & ~filters.user(developer))
+@Client.on_callback_query(filters.regex("^start$"))
+@use_chat_lang()
+async def start(c: Client, m: Message, strings):
+    if m.chat.type == "private":
+        if get_db_botname() is None:
+            botname = "سيمو"
+        else:
+            botname = get_db_botname()
+        x = f"""
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
-🎤╖ أهلآ بك عزيزي أنا بوت ماريا
+🎤╖ أهلآ بك عزيزي أنا بوت {botname}
 ⚙️╢ وظيفتي حماية المجموعات
 ✅╢ لتفعيل البوت عليك اتباع مايلي 
 🔘╢ أضِف البوت إلى مجموعتك
