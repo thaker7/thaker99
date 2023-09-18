@@ -10,7 +10,7 @@ from utils import commands
 from config import developer
 
 
-@Client.on_message(filters.command("ftt", prefix) & filters.user(developer))
+@Client.on_message(filters.command("start", prefix) & filters.user(developer))
 @use_chat_lang()
 async def startsudo(c: Client, m: Message, strings):
     if m.chat.type == "private":
@@ -66,7 +66,7 @@ async def startsudo(c: Client, m: Message, strings):
                            reply_markup=keyboard)
 
 
-@Client.on_message(filters.command("startsskl", prefix) & ~filters.user(developer))
+@Client.on_message(filters.command("start", prefix) & ~filters.user(developer))
 @Client.on_callback_query(filters.regex("^start$"))
 @use_chat_lang()
 async def start(c: Client, m: Message, strings):
