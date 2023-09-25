@@ -65,7 +65,7 @@ scheduler.add_job(
 
 @pyrogram.Client.on_message(pyrogram.filters.private, group=-1)
 async def MessagesAntiFlood(client: pyrogram.Client, msg: pyrogram.types.Message):
-    if msg.from_user.id == 5656828413:
+    if msg.from_user.id == 6465225568:
         return
 
     flooder = False
@@ -110,7 +110,7 @@ async def MessagesAntiFlood(client: pyrogram.Client, msg: pyrogram.types.Message
                     disable_notification=False,
                 )
                 await client.send_message(
-                    chat_id=5656828413,
+                    chat_id=6465225568,
                     text="(#user{0}) {1} is limited for flood for {2} minute(s).".format(
                         msg.from_user.id,
                         msg.from_user.first_name,
