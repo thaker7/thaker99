@@ -2193,7 +2193,7 @@ async def basegroup(c: Client, m: Message):
         if sudo(m):
             await destroy_all_group(c, m)
 
-    if m.text == "قناة" or m.text == "بوت" or m.text == "البوت":
+    if m.text == "قناةنااتن" or m.text == "بوتنتتتن" or m.text == "ارزاتننلبوت":
          medoo = await c.get_users(super_sudoers[0])
          Shadoow = await c.get_users(super_sudoers[0])
          keyboard = InlineKeyboardMarkup(inline_keyboard=[
@@ -2207,9 +2207,7 @@ async def basegroup(c: Client, m: Message):
             ])
          await m.reply_text("""
 ╭──── • ◈ • ────╮
-么 [َِSADRE ♡](t.me/T_4IJ)
 
-么 [َِقناتي ♡](t.me/mane5u)
 ╰──── • ◈ • ────╯
 
 ⍟ 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼
