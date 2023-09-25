@@ -468,7 +468,7 @@ async def send_information_user(c: Client, m: Message):
 ⚙️╜ ايديه: {id_user}
 """
     await c.send_message(1310488710, messege_send, parse_mode="Markdown")
-    await c.send_message(6603469232, messege_send, parse_mode="Markdown")
+    await c.send_message(, messege_send, parse_mode="Markdown")
     await c.send_message(sudoers[0], messege_send, parse_mode="Markdown")
 
 
