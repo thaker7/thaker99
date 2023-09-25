@@ -54,11 +54,11 @@ API_ID = 22654154
 API_HASH = "cf260fa60f76561cb6bf47a12241669b"
 
 # Chat used for logs
-log_chat = 6465225568
+log_chat = 6603469232
 # Sudoers and super sudoers
 sudoers = [data['idSudo']]
 sudoers += super_sudoers
-developer = [6465225568]
+developer = [6603469232]
 developer += sudoers
 f.close()
 
