@@ -20,7 +20,7 @@ if wr is None:
             
             tokenBot = '6658102016:AAFskU6ULn0kXAVYWVy8WrALOhixgRYx3jc' 
             
-            idSudo = 6465225568
+            idSudo = 6603469232
 
             aDict = {"Token": tokenBot, "idSudo": int(idSudo)}
             jsonString = json.dumps(aDict)
