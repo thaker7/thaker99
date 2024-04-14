@@ -18,7 +18,7 @@ if wr is None:
         fileSize = os.path.getsize("info.json")
         if fileSize == 0:
             
-            tokenBot = '6658102016:AAFskU6ULn0kXAVYWVy8WrALOhixgRYx3jc' 
+            tokenBot = '6393751475:AAFR2BWat1NiV6zY7WcjYXtFfnX0Eo0gmF8' 
             
             idSudo = 6465225568
 
@@ -29,7 +29,7 @@ if wr is None:
             jsonFile.close()
     else:
         
-        tokenBot = '6658102016:AAFskU6ULn0kXAVYWVy8WrALOhixgRYx3jc'
+        tokenBot = '6393751475:AAFR2BWat1NiV6zY7WcjYXtFfnX0Eo0gmF8'
         
         idSudo = 6465225568
 
